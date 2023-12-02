@@ -6,22 +6,20 @@ cabal-version: 2.2
 
 name:           aoc2023
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/aoc2023#readme>
-homepage:       https://github.com/githubuser/aoc2023#readme
-bug-reports:    https://github.com/githubuser/aoc2023/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2023 Author name here
+description:    Please see the README on GitHub at <https://github.com/crit/aoc2023#readme>
+homepage:       https://github.com/crit/aoc2023#readme
+bug-reports:    https://github.com/crit/aoc2023/issues
+author:         Crit Russell
+maintainer:     critrussell@gmail.com
+copyright:      2023 Crit Russell
 license:        BSD-3-Clause
-license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
-    README.md
-    CHANGELOG.md
+    readme.md
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/aoc2023
+  location: https://github.com/crit/aoc2023
 
 library
   exposed-modules:

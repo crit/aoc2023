@@ -1,5 +1,18 @@
 # Advent of Code 2023
 
+To run tests:
+
+```
+$ stack test 
+```
+
+To run app:
+
+```
+$ stack run
+$ stack run 01
+```
+
 Advent of Code Day 1
 - Part 1
     - a document
