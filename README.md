@@ -24,3 +24,4 @@ Advent of Code Day 1
 - Part 2
     - convert text of a number to its digit `two => 2`
     - run same calculation
+    - reference solution: https://github.com/Hydrostatik/haskell-aoc-2023/
