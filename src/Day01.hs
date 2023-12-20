@@ -24,11 +24,11 @@ sumCalibrationValuesWithTextNumbers input = sum . fmap (parseInput . parseNumber
 parseInput :: String -> Int
 parseInput = read . (\input -> [head input, last input]) . filter isNumber
 
--- replace text key with digit value
+-- insert text key with digit value
 -- "1onetwoabc2four" => "112abc24"
 parseNumbers :: String -> String
 parseNumbers input =
-    foldr (\(old, new) acc -> replace old new acc) input
+    foldr (\(old, new) acc -> insert old new acc) input
         [
             ("one", "1"),
             ("two", "2"),
@@ -41,11 +41,11 @@ parseNumbers input =
             ("nine", "9")
         ]
 
--- scan source for old value and replace with new value
-replace :: String -> String -> String -> String
-replace _ _ [] = []
-replace _ _ [x] = [x]
-replace old new src@(x : y : xs) =
+-- scan source for old value and insert the new value
+insert :: String -> String -> String -> String
+insert _ _ [] = []
+insert _ _ [x] = [x]
+insert old new src@(x : y : xs) =
     if old `isPrefixOf` src
-        then replace old new (x : new <> xs)
-        else x : replace old new (y : xs)
+        then insert old new (x : new <> xs)
+        else x : insert old new (y : xs)

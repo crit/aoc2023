@@ -15,7 +15,7 @@ copyright:      2023 Crit Russell
 license:        BSD-3-Clause
 build-type:     Simple
 extra-source-files:
-    readme.md
+    README.md
 
 source-repository head
   type: git
@@ -24,6 +24,7 @@ source-repository head
 library
   exposed-modules:
       Day01
+      Day02
   other-modules:
       Paths_aoc2023
   autogen-modules:

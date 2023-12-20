@@ -7,7 +7,7 @@ maintainer:          "critrussell@gmail.com"
 copyright:           "2023 Crit Russell"
 
 extra-source-files:
-- readme.md
+- README.md
 
 # Metadata used when publishing your package
 # synopsis:            Short description of your package
