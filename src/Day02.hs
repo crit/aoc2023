@@ -1,5 +1,7 @@
 module Day02 ( day02 ) where
 
+import Text.Printf ( printf )
+
 day02 :: IO ()
 day02 = do
   input <- readFile "app/input/day-02.txt"

@@ -25,7 +25,7 @@ parseInput :: String -> Int
 parseInput = read . (\input -> [head input, last input]) . filter isNumber
 
 -- insert text key with digit value
--- "1onetwoabc2four" => "112abc24"
+-- "1onetwoabc2four" => "1o1et2oabc2f4ur"
 parseNumbers :: String -> String
 parseNumbers input =
     foldr (\(old, new) acc -> insert old new acc) input
